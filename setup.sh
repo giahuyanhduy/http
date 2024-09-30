@@ -108,7 +108,7 @@ tcp_mux = true
 tcp_mux.keepalive_interval = 30
 
 [$HOSTNAME]
-type = tcp
+type = http
 local_port = $LOCAL_PORT
 remote_port = $REMOTE_PORT
 http_user = "$FRP_USER"
