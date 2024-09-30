@@ -108,9 +108,9 @@ tcp_mux = true
 tcp_mux.keepalive_interval = 30
 
 [$HOSTNAME]
-type = http
+type = http  # Sử dụng proxy HTTP
 local_port = $LOCAL_PORT
-remote_port = $REMOTE_PORT
+remote_port = $REMOTE_PORT  # Cổng sau khi kiểm tra trùng
 http_user = "$FRP_USER"
 http_passwd = "$FRP_PASS"
 EOT
